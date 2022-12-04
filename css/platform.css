@@ -1,0 +1,927 @@
+.platform {
+    position: relative;
+    background: linear-gradient(270deg, #a6c5f7, #fdf4bb, #e66b64, #673ad8);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.platform__notebook {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1700px;
+    height: 850px;
+    animation: noteTrans 5s forwards 3s;
+}
+
+@keyframes noteTrans {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1700px;
+        height: 850px;
+    }
+
+    100% {
+        top: 50%;
+        left: -20%;
+        transform: translate(0%, -50%);
+        width: 2000px;
+        height: 1450px;
+    }
+}
+
+.platform__notebook video {
+    width: 100%;
+    height: 100%;
+}
+
+.notebook-laptop__container {
+    position: absolute;
+    top: 22.3%;
+    left: 24.8%;
+    width: 50.5%;
+    height: 43.4%;
+    background-color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+    animation: visibleNote 2s forwards 7s;
+}
+
+@keyframes visibleNote {
+    0% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+
+.platform-notebook__nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    background: rgba(80, 79, 79, 0.199);
+}
+
+.notebook-nav__logo {
+    display: block;
+    width: 10%;
+    padding: 0.5% 0 0 4%;
+    height: auto;
+}
+
+.notebook-nav__logo img {
+    width: 100%;
+    height: auto;
+}
+
+.notebook-nav__span {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 2.5vw;
+    height: 1.5vh;
+    padding-right: 1%;
+}
+
+.notebook-nav__span div:nth-child(1) {
+    background: rgba(230, 230, 1, 0.719);
+    width: 30%;
+    height: auto;
+    border-radius: 83%;
+}
+
+.notebook-nav__span div:nth-child(2) {
+    background: rgba(5, 90, 5, 0.747);
+    width: 30%;
+    height: auto;
+    border-radius: 83%;
+}
+
+.notebook-nav__span div:nth-child(3) {
+    background: rgba(255, 0, 0, 0.747);
+    width: 30%;
+    height: auto;
+    border-radius: 83%;
+}
+
+@keyframes visibleLaptop {
+    0% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+.laptop-text__container {
+    padding: 2% 0 0 0;
+}
+
+.laptop-text__slider {
+    display: flex;
+    transition: all 1s ease;
+    visibility: hidden;
+}
+
+
+.laptop-text__btn {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 7%;
+}
+
+.laptop-text__btn button {
+    padding: 5px 25px;
+    color: #673ad8;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #673ad8;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.laptop-text__btn button:hover {
+    background: #673ad8;
+    color: #fff;
+}
+
+.laptop-text__content {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    min-width: 100%;
+    height: 400px;
+}
+
+.content__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 78%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__logo p {
+    font-size: 55px;
+    animation: logoTrans 2s infinite;
+    color: rgb(108, 115, 207);
+}
+
+@keyframes logoTrans {
+    0% {
+        font-size: 55px;
+    }
+
+    50% {
+        font-size: 60px;
+    }
+
+    100% {
+        font-size: 55px;
+    }
+}
+
+.content__el {
+    width: 30%;
+    height: 80%;
+    border: 1px solid red;
+}
+
+.content__el1 {
+    background: #673ad8;
+}
+
+.content__el2 {
+    background: #d83ad8;
+}
+
+.content__el3 {
+    background: #d83a4f;
+}
+
+.content__el4 {
+    background: #d83a4f;
+}
+
+.content__el5 {
+    background: #523ad8;
+}
+
+.content__el6 {
+    background: #000000;
+}
+
+
+
+.content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    flex: 1 0;
+}
+
+/* @media screen and (max-width: 1680px) and (min-width: 1680px),
+screen and (max-height: 1050px) and (min-height: 1050px) {
+    @keyframes noteTrans {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1700px;
+            height: 850px;
+        }
+
+        100% {
+            top: 50%;
+            left: -26%;
+            transform: translate(0%, -50%);
+            width: 2000px;
+            height: 1450px;
+        }
+    }
+
+    .avatar__wrapper {
+        right: 0%;
+    }
+}
+
+@media screen and (max-height: 1200px) and (min-height: 1200px) {
+    @keyframes noteTrans {
+        100% {
+            top: 57%;
+            left: -23%;
+            transform: translate(0%, -50%);
+            width: 1700px;
+            height: 1150px;
+        }
+    }
+
+    .notebook-laptop__container {
+        position: absolute;
+        top: 20.3%;
+        left: 24.8%;
+        width: 50.5%;
+        height: 46.6%;
+        background-color: transparent;
+        overflow: hidden;
+        visibility: hidden;
+        animation: visibleNote 2s forwards 7s;
+    }
+
+    .laptop-text__content {
+        margin-top: 2%;
+    }
+
+    .laptop-text__btn {
+        margin-top: 3%;
+    }
+
+    .laptop__func span {
+        bottom: 7%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.5%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.7%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1600px),
+screen and (max-height: 900px) and (min-height: 900px) {
+    @keyframes noteTrans {
+        100% {
+            top: 53%;
+            left: -23%;
+            transform: translate(0%, -50%);
+            width: 1700px;
+            height: 1150px;
+        }
+    }
+
+    .notebook-laptop__container {
+        position: absolute;
+        top: 20.3%;
+        left: 24.8%;
+        width: 50.5%;
+        height: 46.6%;
+        background-color: transparent;
+        overflow: hidden;
+        visibility: hidden;
+        animation: visibleNote 2s forwards 7s;
+    }
+
+    .laptop-text__content {
+        margin-top: 2%;
+    }
+
+    .laptop__func span {
+        bottom: 6%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.5%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.7%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+    .laptop-text__btn {
+        margin-top: 2%;
+    }
+
+    .avatar__wrapper {
+        position: absolute;
+        bottom: -24%;
+        right: 10%;
+        width: 460px;
+        height: 800px;
+    }
+
+    .avatar__wrapper video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1440px) {
+    @keyframes noteTrans {
+        100% {
+            top: 53%;
+            left: -26%;
+            transform: translate(0%, -50%);
+            width: 1700px;
+            height: 1150px;
+        }
+    }
+
+    .laptop__func span {
+        bottom: 6%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.5%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.8%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+    .avatar__wrapper {
+        position: absolute;
+        bottom: -24%;
+        right: 5%;
+        width: 460px;
+        height: 800px;
+    }
+
+    .avatar__wrapper video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1536px) and (min-width: 1536px) {
+    @keyframes noteTrans {
+        100% {
+            top: 53%;
+            left: -24%;
+            transform: translate(0%, -50%);
+            width: 1700px;
+            height: 1150px;
+        }
+    }
+
+    .notebook-laptop__container {
+        position: absolute;
+        top: 20.3%;
+        left: 24.8%;
+        width: 50.5%;
+        height: 46.6%;
+        background-color: transparent;
+        overflow: hidden;
+        visibility: hidden;
+        animation: visibleNote 2s forwards 7s;
+    }
+
+    .laptop-text__content {
+        margin-top: 2%;
+    }
+
+    .laptop-text__btn {
+        margin-top: 2%;
+    }
+
+    .func__logo {
+        bottom: 4%;
+        left: 4%;
+    }
+
+    .laptop__func span {
+        bottom: 6%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.5%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.8%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+    .avatar__wrapper {
+        position: absolute;
+        bottom: -26%;
+        right: 10%;
+        width: 460px;
+        height: 800px;
+    }
+
+    .avatar__wrapper video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1366px),
+screen and (max-height: 768px) and (min-height: 768px) {
+
+    .platform__notebook {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1300px;
+        height: 450px;
+        animation: noteTrans 5s forwards 3s;
+    }
+
+    @keyframes noteTrans {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1300px;
+            height: 450px;
+        }
+
+        100% {
+            top: 51%;
+            left: -30%;
+            transform: translate(0%, -50%);
+            width: 1700px;
+            height: 850px;
+        }
+    }
+
+    .notebook-laptop__container {
+        position: absolute;
+        top: 14.3%;
+        left: 27.6%;
+        width: 45%;
+        height: 56%;
+    }
+
+    .laptop-text__content {
+        margin-top: 2%;
+        height: 350px;
+    }
+
+    .laptop-text__btn {
+        margin-top: 3%;
+    }
+
+    .func__logo {
+        bottom: 6%;
+        left: 4%;
+    }
+
+    .laptop__func span {
+        width: 10px;
+        height: 10px;
+        bottom: 6%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.3%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.6%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+    .avatar__wrapper {
+        position: absolute;
+        bottom: -29%;
+        right: 5%;
+        width: 460px;
+        height: 800px;
+    }
+
+    .avatar__wrapper video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1280px),
+screen and (max-height: 1024px) and (min-height: 1024px) {
+    .platform__notebook {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1250px;
+        height: 400px;
+        animation: noteTrans 5s forwards 3s;
+    }
+
+
+    @keyframes noteTrans {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1250px;
+            height: 400px;
+        }
+
+        100% {
+            top: 51%;
+            left: -34%;
+            transform: translate(0%, -50%);
+            width: 1700px;
+            height: 850px;
+        }
+    }
+
+    .notebook-laptop__container {
+        position: absolute;
+        top: 14.3%;
+        left: 27.6%;
+        width: 44.8%;
+        height: 56%;
+        background-color: transparent;
+        overflow: hidden;
+        visibility: hidden;
+        animation: visibleNote 2s forwards 7s;
+    }
+
+    .laptop-text__content {
+        margin-top: 2%;
+        height: 350px;
+    }
+
+    .laptop-text__btn {
+        margin-top: 3%;
+    }
+
+    .func__logo {
+        bottom: 6%;
+        left: 4%;
+    }
+
+    .laptop__func span {
+        width: 10px;
+        height: 10px;
+        bottom: 6%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.3%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.6%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+    .avatar__wrapper {
+        position: absolute;
+        bottom: -21%;
+        right: 3%;
+        width: 460px;
+        height: 800px;
+    }
+
+    .avatar__wrapper video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.avatar__container {
+    display: block;
+    position: absolute;
+    width: 40vw;
+}
+
+.avatar__wrapper {
+    display: none;
+    position: absolute;
+} */
+
+/* @media screen and (max-width: 1024px) and (min-width: 1024px) {
+    @keyframes noteTrans {
+        100% {
+            top: 51%;
+            left: -27%;
+            transform: translate(0%, -50%);
+            width: 1200px;
+            height: 650px;
+        }
+    }
+
+    .notebook-laptop__container {
+        position: absolute;
+        top: 14.3%;
+        left: 25.8%;
+        width: 48.5%;
+    }
+
+    .func__logo {
+        bottom: 18%;
+        left: 4%;
+    }
+
+    .laptop__func span {
+        width: 8px;
+        height: 8px;
+        bottom: 4%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.3%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.6%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+    .laptop-text__content {
+        margin-top: 2%;
+        height: 270px;
+    }
+
+    .laptop-text__btn {
+        margin-top: 3%;
+        gap: 3%;
+    }
+
+    .laptop-text__btn button {
+        padding: 2px 10px;
+        color: #673ad8;
+        border-radius: 10px;
+        background: transparent;
+        border: 1px solid #673ad8;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.5s ease;
+    }
+
+    .content__logo p {
+        font-size: 44px;
+        animation: logoTrans 2s infinite;
+    }
+
+    @keyframes logoTrans {
+        0% {
+            font-size: 44px;
+        }
+
+        50% {
+            font-size: 50px;
+        }
+
+        100% {
+            font-size: 44px;
+        }
+    }
+
+    .avatar__wrapper {
+        position: absolute;
+        bottom: -21%;
+        right: 3%;
+        width: 360px;
+        height: 600px;
+    }
+
+    .avatar__wrapper video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1152px) and (min-width: 1152px) {
+    .platform__notebook {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1300px;
+        height: 450px;
+        animation: noteTrans 5s forwards 3s;
+    }
+
+    @keyframes noteTrans {
+        0% {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1400px;
+            height: 450px;
+        }
+
+        100% {
+            top: 51%;
+            left: -37%;
+            transform: translate(0%, -50%);
+            width: 1600px;
+            height: 750px;
+        }
+    }
+
+    .notebook-laptop__container {
+        position: absolute;
+        top: 14.3%;
+        left: 29%;
+        width: 42%;
+        height: 56%;
+    }
+
+    .laptop-text__content {
+        margin-top: 2%;
+        height: 320px;
+    }
+
+    .laptop-text__btn {
+        margin-top: 3%;
+        gap: 3%;
+    }
+
+    .func__logo {
+        bottom: 15%;
+        left: 4%;
+    }
+
+    .laptop__func span {
+        width: 8px;
+        height: 8px;
+        bottom: 6%;
+    }
+
+    .laptop__func span:nth-child(1) {
+        right: 4.3%;
+    }
+
+    .laptop__func span:nth-child(2) {
+        right: 2.6%;
+    }
+
+    .laptop__func span:nth-child(3) {
+        right: 1%;
+    }
+
+    .laptop-text__btn button {
+        padding: 4px 15px;
+        color: #673ad8;
+        border-radius: 10px;
+        background: transparent;
+        border: 1px solid #673ad8;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.5s ease;
+    }
+
+    .content__logo p {
+        font-size: 40px;
+        animation: logoTrans 2s infinite;
+    }
+
+    @keyframes logoTrans {
+        0% {
+            font-size: 40px;
+        }
+
+        50% {
+            font-size: 44px;
+        }
+
+        100% {
+            font-size: 40px;
+        }
+    }
+
+    .avatar__wrapper {
+        position: absolute;
+        bottom: -27%;
+        right: 4%;
+        width: 410px;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .avatar__wrapper video {
+        width: 100%;
+        height: 100%;
+    }
+} */

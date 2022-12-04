@@ -1,0 +1,98 @@
+.loading {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    z-index: 1000;
+}
+
+.loading__video {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    background-blend-mode: multiply;
+    background-color: black;
+    z-index: -1;
+}
+
+@keyframes opac {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.loading__container {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.loading__box {
+    display: none;
+    width: 20vw;
+    height: 20vh;
+    margin: 10% auto;
+    animation: load 2s infinite;
+}
+
+.loading__box img {
+    width: 100%;
+    height: auto;
+}
+
+.loading__box button {
+    display: block;
+    background: none;
+    border: none;
+}
+
+.loading__box button:active {
+    display: block;
+    background: none;
+    border: none;
+}
+
+.loading__box button:hover {
+    cursor: pointer;
+}
+
+@keyframes load {
+    from {
+        width: 20vw;
+    }
+
+    50% {
+        width: 21vw;
+    }
+
+    to {
+        width: 20vw;
+    }
+}
+
+.loading__avatar {
+    display: none;
+    position: fixed;
+    width: 30vw;
+    height: auto;
+    bottom: -10%;
+}
+
+.loading__avatar video {
+    width: 100%;
+    height: auto;
+}

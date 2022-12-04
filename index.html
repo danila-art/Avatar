@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar - Home</title>
+    <link rel="shortcut icon" href="img/SelebMark.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading_style.css">
+    <link rel="stylesheet" href="css/media_style.css">
+</head>
+
+<body id="index">
+    <section class="loading" id="loading">
+        <video class="loading__video" muted autoplay loop>
+            <source src="img/Earth_Celebmark.webm" type="video/webm">
+        </video>
+        <div class="loading__container">
+            <div class="loading__box" id="loadingButtonBoxPlay">
+                <button id="loadingButtonPlay"><img src="img/icons/play.png" alt="playButton"></button>
+            </div>
+            <div class="loading__avatar" id="loadingAvatar">
+                <video id="loadingAvatarVideo">
+                    <source src="img/irina_1_VP8.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="loading__box" id="loadingButtonBox">
+                <button id="loadingButton"><img src="img/SelebMark.png" alt="logo"></button>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.onload = function () {
+            let loadButtonBoxPlay = document.getElementById('loadingButtonBoxPlay'); //playbox
+            let loadingButtonPlay = document.getElementById('loadingButtonPlay'); //playbutton
+            let loadingAvatar = document.getElementById('loadingAvatar');
+            let loadingAvatarVideo = document.getElementById('loadingAvatarVideo');
+            loadButtonBoxPlay.style.display = 'block';
+            let loadButton = document.getElementById('loadingButton');
+            loadingButtonPlay.addEventListener('click', () => {
+                loadButtonBoxPlay.style.display = 'none';
+                loadingAvatar.style.display = 'block';
+                loadingAvatarVideo.play();
+                loadingAvatarVideo.addEventListener('ended', () => {
+                    loadingAvatar.style.display = 'none';
+                    document.getElementById('loadingButtonBox').style.display = 'block';
+                });
+            });
+            loadButton.addEventListener('click', () => {
+                document.getElementById('loading').style.animation = 'opac 1s forwards';
+                setTimeout(() => {
+                    document.getElementById('loading').style.display = 'none';
+                    window.location.href = 'page/main.html';
+                }, 1000);
+            });
+        }
+    </script>
+</body>
+
+</html>

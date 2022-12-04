@@ -1,0 +1,247 @@
+@keyframes logoSize {
+    from {
+        width: 35%;
+    }
+
+    50% {
+        width: 36%;
+    }
+
+    to {
+        width: 35%;
+    }
+}
+
+.navigation {
+    display: block;
+    position: absolute;
+    background: linear-gradient(270deg, rgb(86,95,214, 0.9), rgba(219,66,239,0.9));
+    top: -50%;
+    left: auto;
+    right: -30%;
+    border-radius: 50%;
+    width: 30%;
+    height: 60%;
+    animation: navigationVisible 2s forwards 2s;
+    z-index: 2;
+}
+
+@keyframes navigationVisible {
+    100% {
+        top: -20%;
+        right: -10%;
+    }
+}
+
+.navigation__container {
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 92%;
+}
+
+.navigation__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navigation__container-box {
+    display: block;
+    width: 4vw;
+    height: 8vh;
+    cursor: pointer;
+}
+
+.navigation__container-box button {
+    cursor: pointer;
+}
+
+.navigation__container-box button {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.navigation-box__icon {
+
+}
+
+.navigation__button-info {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    transition: 1s;
+    width: 10vw;
+    text-align: center;
+    padding: 1%;
+    opacity: 0;
+    left: 0%;
+    font-size: 20px;
+}
+
+.navigation-box__1 {
+    margin: 0% 30% 30% 0%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-box__2 {
+    margin: 30% 0% 30% 25%;
+    cursor: pointer;
+    transition: 1s;
+    transform: rotate(-15deg);
+}
+
+.navigation-box__3 {
+    margin: 30% 30% 30% 80%;
+    cursor: pointer;
+    transition: 1s;
+    transform: rotate(-30deg);
+}
+
+.navigation-box__4 {
+    margin: -35% 30% 30% 200%;
+    cursor: pointer;
+    transition: 1s;
+    transform: rotate(-55deg);
+}
+
+.navigation-box__5 {
+    margin: 30% 30% 30% 30%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-box__1:hover {
+    width: 350%;
+    margin: 0% 30% 30% -145%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.share-navigation-box__1:hover {
+    width: 450%;
+    margin: 0% 30% 30% -145%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.navigation-box__2:hover {
+    width: 350%;
+    margin: 30% 0% 25% -125%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.navigation-box__3:hover {
+    width: 350%;
+    margin: 30% 30% 25% -70%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.navigation-box__4:hover {
+    width: 350%;
+    margin: -15% 30% 30% 40%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.navigation-box__5:hover {
+    width: 350%;
+    margin: 30% 30% 30% -120%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.navigation-box__1:hover .navigation__flex, .navigation-box__2:hover .navigation__flex, .navigation-box__3:hover .navigation__flex, .navigation-box__4:hover .navigation__flex, .share-navigation-box__1:hover .navigation__flex {
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+@keyframes textAnimNav {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav__info1 {
+    margin-left: -50%;
+}
+
+.nav__info2, .nav__info3, .nav__info4 {
+    margin-left: 30%;
+}
+
+.menu__logo {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 3;
+    top: -15%;
+    right: -12%;
+    animation: showLogo 2s forwards, showShadow 3s forwards 1s;
+}
+
+@keyframes showShadow {
+    0% {
+        box-shadow: none
+    }
+
+    20% {
+        box-shadow: rgb(254, 243, 185, 0.6) -25px 25px;
+    }
+
+    40% {
+        box-shadow: rgb(254, 243, 185, 0.6) -25px 25px, rgb(254, 243, 185, 0.4) -40px 40px;
+    }
+
+    60% {
+        box-shadow: rgb(254, 243, 185, 0.6) -25px 25px, rgb(254, 243, 185, 0.4) -40px 40px, rgb(230, 226, 214, 0.2) -15px 15px;
+    }
+
+    80% {
+        box-shadow: rgb(254, 243, 185, 0.6) -25px 25px, rgb(254, 243, 185, 0.4) -40px 40px, rgb(230, 226, 214, 0.2) -15px 15px, rgb(186, 218, 245, 0.1) -30px 30px;
+    }
+
+    100% {
+        box-shadow: rgb(254, 243, 185, 0.6) -5px 5px, rgb(254, 243, 185, 0.4) -10px 10px, rgb(230, 226, 214, 0.2) -15px 15px, rgb(186, 218, 245, 0.1) -20px 20px, rgb(164, 194, 247, 0.05) -25px 25px;
+    }
+}
+
+@keyframes showLogo {
+    0% {
+        top: -15%;
+        left: -12%;
+    }
+
+    100% {
+        top: -5%;
+        right: -2%;
+    }
+}
+
+.menu__logo img {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 80px;
+    height: 95px;
+}
